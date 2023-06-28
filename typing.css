@@ -113,7 +113,7 @@ body{
     text-align: center;
     font-size: 50px;
     color:gray;
-    animation: glow 1s ease  ;
+    animation: glow 1s ease  infinite;
 }
 .content .img .para:hover{
     color: white;
