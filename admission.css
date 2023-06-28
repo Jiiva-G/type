@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: teal;
+    padding: 0 20px;
+}
+.box{
+    position:relative;
+    max-width: 700px;
+    width: 100%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.box header{
+    font-size: 1.5rem;
+    color: #e67e22;
+    font-weight: 500;
+    text-align: center;
+}
+.box .form{
+    margin-top: 30px;
+}
+.form .input-box{
+    color:#333;
+    margin-top: 20px;
+}
+.input-box label{
+    color: #333;
+
+}
+.form :where( .input-box input, .select-box){
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    border-radius: 6px;
+    padding: 0 15px;
+    margin-top: 5px;
+}
+.form .column{
+    display: flex;
+    column-gap: 15px;
+}
+.form .column .date{
+    color: gray;
+}
+.form .gender-option{
+    display: flex;
+    column-gap: 20px;
+}
+.form .gender-box .gender{
+    color: #333;
+}
+.form .gender-box .gender:hover{
+    text-decoration: underline;
+    transition: 2s ease-in-out;
+}
+.form .gender-box{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form .input-box .adres{
+    height: 80px;
+}
+.select-box select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+}
+.address :where(input, .select-box){
+    margin-top: 15px;
+}
+
+.form button{
+    display: block;
+    height: 45px;
+    width: 100px;
+    background-color:#1abc9c;
+    margin-top: 30px;
+    cursor: pointer;
+    align-items: center;
+    border: none;
+    margin-left: 40%;
+
+}
+.form button:hover{
+    background-color: #29d4b2;
+}
+.form button a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+
+
+
+@media screen and (max-width: 500px){
+    .form .column{
+        flex-wrap: wrap;
+    }
+}

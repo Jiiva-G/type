@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #7f8c8d;
+    margin-top: 120px;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e74c3c;  
+    display: flex;
+    align-items: center;
+    height: 120px;
+    justify-content: space-between;
+}
+.butt{
+    margin: 0 15px;
+    flex-shrink: 0;
+    width: 40px;
+    height: 25px;
+    border: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+.bars{
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+}
+.logo{
+    color: white;
+    margin: 0 30px;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.Siva{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+.links{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100vh;
+    width: 250px;
+    background-color: white;
+}
+.links{
+    padding: 12px 15px;
+    font-weight:500;
+    display: flex;
+    flex-direction: column;
+}
+.links a{
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+}
+.link.active, .link:hover{
+    color: #e74c3c;
+    background-color: lightgoldenrodyellow;
+}
+.links{
+    transform: translateX(-250px);
+    transition: 0.6s;
+}
+.open .links{
+    transform: translateX(0);
+}
+.nav-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(2px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+
+}
+.open .nav-overlay{
+    visibility: visible;
+    opacity: 1;
+}

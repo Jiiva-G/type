@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fees Details</title>
+    <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+  *{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-image: linear-gradient(to right top, #113160, #00689f, #00a1ad, #00d583, #bffd34);
+    user-select: none;
+  }
+  h1{
+    text-align: center;
+    font-weight: 500;
+    color: white;
+  }
+  .text{
+            -webkit-text-stroke-width: 0px;
+            text-stroke-width:0px;
+            position: relative;
+            margin-top: 30px;
+        }
+        .text::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            content: attr(data-letters);
+            overflow: hidden;
+        }
+.text::before{
+    color: #f39c12;
+    transition: 1s ease-in-out;
+    height: 0;
+    z-index: 10;
+  }
+  .text:hover::before{
+    height: 100%;
+  }
+
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    position: relative;
+    margin-top: -15px;
+}
+.container .box1{
+    height: 250px;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+.container .box2{
+    min-height:250px;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+.container :where(.box1 .tamil, .box2 .English, .Exam, .box3 .book){
+    text-align: center;
+    font-weight: 500;
+    color: #e74c3c;
+    margin-top: 10px;
+
+}
+.container :where(.box1 span, .box2 span, .box3 span) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.container .box3 {
+    min-height:150px;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+}
+    </style>
+</head>
+<body>
+    <h1 class="text" data-letters="FEES DETAILS">FEES DETAILS</h1>
+    <div class="container">
+    <div class="box1">
+        <h2 class="tamil">Tamil Typing Fees</h2>
+        <span>Monthly Fees Amount 450/-</span>
+        <span>Admission Fees Amount 100/-</span>
+    </div>
+    <div class="box2">
+        <h2 class="English">English Typing Fees</h2>
+        <span>Monthly Fees Amount 400/-</span>
+        <span>Admission Fees Amount 100/-</span>
+    </div>
+
+    <div class="box2">
+        <h2 class="Exam">Exam Fees</h2>
+        <span>Tamil,English Junior Exam Fees 2200/-</span>
+        <span>Tamil,English Senior Exam Fees 2400/-</span>
+    </div>
+
+    <div class="box3">
+        <h2 class="book">Book Fees</h2>
+        <span>Book Fees Amount 200/-</span>
+        
+    </div>
+</div>
+</body>
+</html>
