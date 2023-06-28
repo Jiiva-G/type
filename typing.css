@@ -98,3 +98,13 @@ body{
     visibility: visible;
     opacity: 1;
 }
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.img .pic{
+    margin-top: 50px;
+    border-radius: 8px;
+}
