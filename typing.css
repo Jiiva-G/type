@@ -153,7 +153,8 @@ body{
 .infor .inf{
     text-indent: 100px;
     text-align: justify;
-    font-size: 20px;
+    font-size: 16px;
+    padding:10px;
 }
 .infor .no1{
     margin-bottom: 30px;
