@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Timing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 10px;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 30px;
+            color: #16a085;
+        }
+        .table{
+            border-collapse: collapse;
+            font-size: 20px;
+            border-color: #2c3e50;
+            user-select: none;
+        }
+        .table tr td{
+            padding: 10px;
+        } 
+        .table thead th{
+            padding: 15px;
+            background-color: #34495e;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Class Timing</h1>
+    <table class="table" width="100%" border="1px" cellpadding="10px">  
+        <thead>
+                <th colspan="2">Monday - Saturday</th>
+            </thead>
+            <tr>
+                <td>Morning</td>
+                <td>6.15am to 1.00pm</td>
+            </tr>
+            <tr>
+                <td>Evening</td>
+                <td>3.00pm to 8.00pm</td>
+            </tr>
+            <tfoot>
+                <td colspan="2">Sunday Holiday</td>
+            </tfoot>
+    
+    </table>
+    
+</body>
+</html>
